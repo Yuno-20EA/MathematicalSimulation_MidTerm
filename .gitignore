@@ -1,0 +1,10 @@
+# MATLAB / Octave
+*.asv
+*.autosave
+*.mex*
+slprj/
+octave-workspace
+# He dieu hanh / editor
+.DS_Store
+Thumbs.db
+.vscode/
