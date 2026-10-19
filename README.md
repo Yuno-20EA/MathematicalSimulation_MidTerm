@@ -4,7 +4,7 @@ Cài đặt bằng **MATLAB / GNU Octave** (không cần toolbox) hai phương p
 **phương pháp hướng dốc nhất (steepest descent)** và **phương pháp Newton** — kết hợp
 **tìm kiếm đường đi lùi (backtracking line search, Thuật toán 3.1)** để cực tiểu hóa hàm Rosenbrock (3.27).
 Chiều dài bước ban đầu $s_0 = 1$ và chiều dài bước được in ra ở **mỗi vòng lặp**.
-Thử với hai điểm xuất phát: $x_0=(1.2,\,1.2)$ (dễ) và $x_0=(-1.2,\,1)$ (khó).
+Thử với hai điểm xuất phát: $x_0=(1.2,\,1.2)$ và $x_0=(-1.2,\,1)$.
 
 ## Mục lục
 1. [Cấu trúc repo & cách chạy](#1-cấu-trúc-repo--cách-chạy)
