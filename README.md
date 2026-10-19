@@ -4,7 +4,7 @@ Cài đặt bằng **MATLAB / GNU Octave** (không cần toolbox) hai phương p
 **phương pháp hướng dốc nhất (steepest descent)** và **phương pháp Newton**, kết hợp với
 **tìm kiếm đường đi lùi (backtracking line search, Thuật toán 3.1)** để cực tiểu hóa hàm Rosenbrock (3.27).
 Chiều dài bước ban đầu s<sub>0</sub> = 1 và chiều dài bước được in ra ở **mỗi vòng lặp**.
-Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) (dễ) và x<sub>0</sub> = (−1.2, 1) (khó).
+Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) và x<sub>0</sub> = (−1.2, 1).
 
 ## Mục lục
 1. [Cấu trúc repo và cách chạy](#1-cấu-trúc-repo-và-cách-chạy)
@@ -34,16 +34,13 @@ Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) (dễ) và x<su
 │   ├── plot_convergence.m     # Hình 3: f(x_k), ||grad||, step length theo vòng lặp
 │   ├── floor_contours.m       # hàm phụ trợ vẽ
 │   └── sample_indices.m       # hàm phụ trợ vẽ
-├── tests/run_tests.m          # 8 kiểm thử tự động (không mở hình)
 ├── results/
 │   ├── console_output.txt     # log console do run_demo ghi lại
 │   └── images/                # fig1_3d_surface.png, fig2_zoom.png, fig3_convergence.png, ...
-└── .github/workflows/tests.yml  # CI: chạy run_tests bằng Octave mỗi lần push
+└── .github/workflows/tests.yml  # CI: chạy run_tests bằng Matlab mỗi lần push
 ```
 
 ```matlab
->> run_demo                    % chạy toàn bộ (MATLAB hoặc Octave), mất vài giây
->> addpath tests; run_tests    % kiểm thử
 ```
 
 Mọi tham số chỉnh trong `src/default_options.m`: `s0 = 1`, `rho = 0.5`, `c = 1e-4`, `tol = 1e-6`, `maxit = 50000`,
