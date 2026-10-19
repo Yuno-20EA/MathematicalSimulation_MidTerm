@@ -339,4 +339,4 @@ Sự chênh lệch này khớp với phân tích số điều kiện κ ≈ 2508
 - L. Armijo, "Minimization of functions having Lipschitz continuous first partial derivatives", *Pacific J. Math.* 16(1), 1966.
 
 ## Giấy phép
-MIT (xem `LICENSE`; thay `<TEN-CUA-EM>` bằng tên của bạn).
+MIT (xem `LICENSE`; thay `Hoàng Hải` bằng tên của bạn).
