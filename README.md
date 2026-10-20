@@ -279,7 +279,12 @@ Mức đạt: **đạt về nội dung**; vị trí chữ ghi chú có thể c�
 
 ### 6.4 Hình 2: thu phóng từng quỹ đạo (A: toàn cảnh, B: 15 vòng đầu, C: quanh nghiệm)
 
-![zoom](results/images/fig2_zoom.png)
+<img width="1423" height="420" alt="Screenshot 2026-10-20 144445" src="https://github.com/user-attachments/assets/6d720e7a-9785-49c6-9a90-4dec113d3920" />
+
+
+<img width="1292" height="402" alt="Screenshot 2026-10-20 144451" src="https://github.com/user-attachments/assets/b8a4ec52-4572-497c-ac8d-2b99bded59c1" />
+
+
 
 **So với mong muốn:** hàng trên là x<sub>0</sub> = (1.2, 1.2), hàng dưới là x<sub>0</sub> = (−1.2, 1). Cột B cho thấy rõ steepest descent nhảy một bước lớn rồi **nhích rất chậm và lệch hai bên đáy thung lũng**,
 còn Newton bám sát đáy thung lũng chỉ với vài điểm lặp được đánh số. Cột C cho thấy Newton chạm gần nghiệm chỉ sau vài vòng cuối trong khi steepest descent vẫn đang trượt dọc đáy.
@@ -291,7 +296,11 @@ còn Newton bám sát đáy thung lũng chỉ với vài điểm lặp được 
 
 ### 6.5 Hình 3: hội tụ theo vòng lặp
 
-![convergence](results/images/fig3_convergence.png)
+<img width="1447" height="380" alt="Screenshot 2026-10-20 144507" src="https://github.com/user-attachments/assets/01265dc4-5c4f-4845-a5d0-d15513fed426" />
+
+
+
+<img width="1312" height="381" alt="Screenshot 2026-10-20 144512" src="https://github.com/user-attachments/assets/2c0d2412-72b7-459d-b40e-0bd3ae874c12" />
 
 **So với mong muốn:** cột trái là f(x<sub>k</sub>) và cột giữa là ‖∇f‖ (log-log): đường Newton rơi dốc xuống trong chục vòng, steepest descent đi gần phẳng rồi giảm chậm trong khoảng 10<sup>4</sup> vòng.
 Cột phải là chiều dài bước (log): Newton phần lớn bằng 1, steepest descent bám quanh 10<sup>−3</sup>. Khớp E3, E4, E5, E6. **Đạt.**
