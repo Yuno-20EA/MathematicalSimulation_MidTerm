@@ -266,7 +266,8 @@ Lưới an toàn không được kích hoạt lần nào: Hessian xác định d
 
 ### 6.3 Hình 1: mặt 3D và 4 quỹ đạo
 
-![3D](results/images/fig1_3d_surface.png)
+<img width="1236" height="792" alt="Screenshot 2026-10-20 144332" src="https://github.com/user-attachments/assets/69b794f4-2be6-40ea-8efd-20ebca679da4" />
+
 
 **So với mong muốn:** đủ các thành phần: mặt Rosenbrock có đường đồng mức ở đáy, 4 quỹ đạo (SD xanh dương/xanh lơ, Newton đỏ/xanh lá),
 chú thích *Start point*, *Backtracking occurring here*, *Ideal - [1, 1]*. Bề mặt cắt ở f = 200 và được đặt hơi trong suốt (`FaceAlpha = 0.7`, nếu phần mềm hỗ trợ) để thấy quỹ đạo trong thung lũng.
