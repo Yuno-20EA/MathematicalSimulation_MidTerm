@@ -23,8 +23,3 @@ function [s, nEval] = backtracking(x, p, f0, g0, opts)
 end
 
 
-
-
-
-
-//haibuccho
