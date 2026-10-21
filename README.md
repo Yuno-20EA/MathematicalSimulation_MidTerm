@@ -6,6 +6,12 @@ Cài đặt bằng **MATLAB** (không cần toolbox) hai phương pháp tối ư
 Chiều dài bước ban đầu s<sub>0</sub> = 1 và chiều dài bước được in ra ở **mỗi vòng lặp**.
 Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) và x<sub>0</sub> = (−1.2, 1).
 
+## Thành viên nhóm 10:
+1.Nguyễn Hoàng Hải - Mã sinh viên: 25112038
+2.Nguyễn Triều Nguyên - Mã sinh viên: 2511 
+3.Trần Đức Anh Minh - Mã sinh viên: 25112085
+4.Trần Hà Nguyên - Mã sinh viên: 25112092
+
 ## Mục lục
 1. [Cấu trúc repo và cách chạy](#1-cấu-trúc-repo-và-cách-chạy)
 2. [Công thức, giải thích và lý do sử dụng](#2-công-thức-giải-thích-và-lý-do-sử-dụng)
@@ -45,9 +51,6 @@ Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) và x<sub>0</su
 
 Mọi tham số chỉnh trong `src/default_options.m`: `s0 = 1`, `rho = 0.5`, `c = 1e-4`, `tol = 1e-6`, `maxit = 50000`,
 `printMax` (số vòng lặp đầu được in), `stepDecimals`, ...
-
-> **Lưu ý về ảnh minh họa:** các ảnh trong `results/images/` được tạo bằng Octave. Hãy chụp lại từ MATLAB của bạn
-> (đặc biệt là ảnh ghép Figure + Command Window) và ghi đè lên cùng tên file để README hiển thị ảnh của riêng bạn.
 
 ---
 
