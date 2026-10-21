@@ -1,6 +1,6 @@
 # Steepest Descent vs Newton + Backtracking Line Search trên hàm Rosenbrock
 
-Cài đặt bằng **MATLAB / GNU Octave** (không cần toolbox) hai phương pháp tối ưu không ràng buộc:
+Cài đặt bằng **MATLAB** (không cần toolbox) hai phương pháp tối ưu không ràng buộc:
 **phương pháp hướng dốc nhất (steepest descent)** và **phương pháp Newton**, kết hợp với
 **tìm kiếm đường đi lùi (backtracking line search, Thuật toán 3.1)** để cực tiểu hóa hàm Rosenbrock (3.27).
 Chiều dài bước ban đầu s<sub>0</sub> = 1 và chiều dài bước được in ra ở **mỗi vòng lặp**.
@@ -12,7 +12,7 @@ Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) và x<sub>0</su
 3. [Giải thích thuật toán](#3-giải-thích-thuật-toán)
 4. [Đầu ra mong muốn](#4-đầu-ra-mong-muốn)
 5. [Mục đích và ứng dụng](#5-mục-đích-và-ứng-dụng)
-6. [Kết quả](#6-kết-quả) (mỗi mục: so với mong muốn, hình, đủ yêu cầu chưa, cải tiến)
+6. [Kết quả](#6-kết-quả) 
 7. [Tổng kết và hướng phát triển](#7-tổng-kết-và-hướng-phát-triển)
 8. [Tài liệu tham khảo](#8-tài-liệu-tham-khảo)
 
@@ -187,11 +187,6 @@ Newton converged in fewer iterations.
 | E6 | Đuôi hội tụ Newton có dạng bậc hai (số chữ số đúng tăng nhanh) |
 | E7 | Điểm khó (−1.2, 1) khiến Newton tốn thêm vòng lặp và co bước nhiều hơn điểm dễ |
 | E8 | Có chiều dài bước in ở **mỗi** vòng lặp, đúng bố cục yêu cầu |
-
-> **Lưu ý:** ảnh mẫu của bài yêu cầu chỉ để tham khảo bố cục. Một số con số trong ảnh mẫu (ví dụ steepest descent có s = 1 ở vòng 1,
-> hay f(x) âm) không thể xảy ra với hàm Rosenbrock thật nên **không** dùng làm đáp án; đáp án là số do code sinh ra.
-> Ảnh mẫu ghi điểm xuất phát thứ hai là (−1.2, 1.2), còn đề bài là (−1.2, 1); repo theo đề bài.
-
 ---
 
 ## 5. Mục đích và ứng dụng
@@ -224,10 +219,6 @@ Tất cả số liệu dưới đây lấy từ lần chạy với `s0 = 1, rho 
 
 Vòng 1 của steepest descent: f giảm từ 5.8 xuống 0.431 với s ≈ 9.8e-04. Với Newton: f giảm xuống 0.0384 với s = 1.
 
-**Ảnh minh họa:** *(chụp màn hình Command Window của bạn rồi lưu thành `results/images/console_start1.png`, sau đó bỏ dấu chú thích ở dòng dưới)*
-
-<!-- ![console 1](results/images/console_start1.png) -->
-
 **So với mong muốn:** E1 đạt, E2 đạt, E3 đạt (khoảng 1 600 lần ít vòng hơn), E4 đạt (7/8 bước là s = 1), E5 đạt (13 011/13 011 bước có s < 1),
 E6 đạt (f: 1.9e-5, 3.4e-8, 3.2e-14, 1.1e-25; số mũ gần nhân đôi), E8 đạt. **Chuẩn xác.**
 
@@ -248,10 +239,6 @@ E6 đạt (f: 1.9e-5, 3.4e-8, 3.2e-14, 1.1e-25; số mũ gần nhân đôi), E8 
 | Chiều dài bước | luôn nhỏ hơn 1; chỉ 1 bước lớn hơn 0.01 | `1, 0.125, 1, 1, 1, 0.25, 1, 1, 1, 0.5, 1, 1, 1, 0.5, 1, ...` (4 bước bị co, 17 bước s = 1) |
 | Số lần tính f trong backtracking | 136 799 | 28 |
 | Số lần thay hướng Newton bằng −∇f | không áp dụng | 0 |
-
-**Ảnh minh họa:** *(để trống để bạn tự chụp; lưu thành `results/images/console_start2.png`)*
-
-<!-- ![console 2](results/images/console_start2.png) -->
 
 **So với mong muốn:** E1 đạt, E2 đạt, E3 đạt (khoảng 650 lần), E4 đạt (17/21 bước s = 1), E5 đạt, E6 đạt, **E7 đạt**
 (Newton tốn 21 vòng và 4 lần co bước so với 8 vòng và 1 lần co bước ở điểm dễ). **Chuẩn xác.**
@@ -321,7 +308,7 @@ Cột phải là chiều dài bước (log): Newton phần lớn bằng 1, steep
 - f giảm đơn điệu và s nằm trong (0, 1];
 - Newton ít vòng lặp hơn ít nhất 100 lần.
 
-Kết quả: **8/8 đạt** (Octave). **So với mong muốn:** đúng, và là cơ sở để tin các con số ở trên.
+Kết quả: **8/8 đạt** 
 
 **Có thể cải tiến:** thêm test hồi quy so sánh số vòng lặp với giá trị tham chiếu; thêm test cho nhánh lưới an toàn (cần điểm có Hessian không xác định dương); chạy CI cả trên MATLAB.
 
@@ -339,7 +326,6 @@ Sự chênh lệch này khớp với phân tích số điều kiện κ ≈ 2508
 2. Trust-region và Levenberg-Marquardt thay cho line search.
 3. Thống kê trên nhiều điểm xuất phát; khảo sát độ nhạy theo ρ, c, s<sub>0</sub>.
 4. Mở rộng lên n chiều (Rosenbrock tổng quát) và so sánh chi phí O(n) với O(n³) mỗi vòng.
-5. **Cài lại bằng C++ (Eigen)** rồi thử trên vi điều khiển, bước nối từ phần toán sang lập trình nhúng.
 
 ---
 
