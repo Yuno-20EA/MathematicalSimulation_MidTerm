@@ -12,9 +12,9 @@ Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) và x<sub>0</su
 
 2.Trần Đức Anh Minh - Mã sinh viên: 25112085
 
-3.Trần Hà Nguyên - Mã sinh viên: 25112092
+3.Trần Hà Nguyên - Mã sinh viên: 25112091
 
-4.Nguyễn Triều Nguyên - Mã sinh viên: 2511
+4.Nguyễn Triều Nguyên - Mã sinh viên: 25112092
 
 
 ## Mục lục
