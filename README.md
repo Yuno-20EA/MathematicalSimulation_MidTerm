@@ -10,11 +10,12 @@ Thử với hai điểm xuất phát: x<sub>0</sub> = (1.2, 1.2) và x<sub>0</su
 
 1.Nguyễn Hoàng Hải - Mã sinh viên: 25112038
 
-2.Nguyễn Triều Nguyên - Mã sinh viên: 2511
+2.Trần Đức Anh Minh - Mã sinh viên: 25112085
 
-3.Trần Đức Anh Minh - Mã sinh viên: 25112085
+3.Trần Hà Nguyên - Mã sinh viên: 25112092
 
-4.Trần Hà Nguyên - Mã sinh viên: 25112092
+4.Nguyễn Triều Nguyên - Mã sinh viên: 2511
+
 
 ## Mục lục
 1. [Cấu trúc repo và cách chạy](#1-cấu-trúc-repo-và-cách-chạy)
